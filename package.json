@@ -16,8 +16,10 @@
     }
   },
   "lint-staged": {
-    "src/**/*": "yarn lint --fix"
-  },
+    "src/**/*": [
+      "yarn lint --fix", "yarn test --bail"
+  ]
+},
   "dependencies": {
     "next": "10.0.1",
     "react": "17.0.1",
